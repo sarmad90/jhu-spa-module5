@@ -1,24 +1,24 @@
 <form name="signup" novalidate>
   <div>
-    <p>First Name: <input type="text" ng-model="first_name" required/></p>
+    <p>First Name: <input type="text" name="first_name" ng-model="first_name" required/></p>
     <span ng-if="signup.first_name.$invalid &amp;&amp; signup.first_name.$touched" class="ng-scope">
                     First name is required.
                 </span>
   </div>
   <div>
-    <p>Last Name: <input type="text" ng-model="last_name" required/></p>
+    <p>Last Name: <input type="text" name="last_name" ng-model="last_name" required/></p>
     <span ng-if="signup.last_name.$invalid &amp;&amp; signup.last_name.$touched" class="ng-scope">
                     Last name is required.
                 </span>
   </div>
   <div>
-    <p>Email: <input type="email" ng-model="email" required/></p>
+    <p>Email: <input type="email" name="email" ng-model="email" required/></p>
     <span ng-if="signup.email.$invalid &amp;&amp; signup.email.$touched" class="ng-scope">
       Must be a valid email address: handle@domain format.
                 </span>
   </div>
   <div>
-    <p>Phone: <input type="text" ng-model="phone" required/></p>
+    <p>Phone: <input type="text" name="phone" ng-model="phone" required/></p>
     <span ng-if="signup.phone.$invalid &amp;&amp; signup.phone.$touched" class="ng-scope">
       Phone number is required.
                 </span>
