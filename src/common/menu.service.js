@@ -28,15 +28,7 @@ function MenuService($http, ApiPath) {
   };
 
   service.getMenuItem = function (short_name) {
-    var config = {};
-    // if (short_name) {
-    //   config.params = {'category': category};
-    // }
-
-    return $http.get(ApiPath + '/menu_items/' + short_name + '.json', config);
-    // .then(function (response) {
-    //   return response.data;
-    // });
+    return $http.get(ApiPath + '/menu_items/' + short_name + '.json');
   };
 
 }

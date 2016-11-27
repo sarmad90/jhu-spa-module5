@@ -9,7 +9,7 @@
     <p>Email: <input type="email" ng-model="email" required/></p>
   </div>
   <div>
-    <p>Menu Item: <input type="text" ng-model="menu_item"/></p>
+    <p>Menu Item: <input type="text" ng-model="menu_item_name"/></p>
     <p ng-if="menu_item_error">{{menu_item_error}}</p>
   </div>
   <button ng-disabled="!signup.$valid" ng-click="submit()">Submit</button>

@@ -9,6 +9,7 @@ function MyInfoService() {
   var service = this;
 
   service.userInfo = {};
+  service.menu_item = {};
 
 
 }
