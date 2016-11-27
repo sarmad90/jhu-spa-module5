@@ -1,0 +1,17 @@
+<form name="signup" novalidate>
+  <div>
+    <p>First Name: <input type="text" ng-model="first_name" required/></p>
+  </div>
+  <div>
+    <p>Last Name: <input type="text" ng-model="last_name" required/></p>
+  </div>
+  <div>
+    <p>Email: <input type="email" ng-model="email" required/></p>
+  </div>
+  <div>
+    <p>Menu Item: <input type="text" ng-model="menu_item"/></p>
+    <p ng-if="menu_item_error">{{menu_item_error}}</p>
+  </div>
+  <button ng-disabled="!signup.$valid" ng-click="submit()">Submit</button>
+  <p ng-if="success_message">{{success_message}}</p>
+</form>
