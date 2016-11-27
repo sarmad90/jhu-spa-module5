@@ -9,6 +9,7 @@ function SignupController($scope, MenuService, MyInfoService, ApiPath){
       MyInfoService.userInfo.first_name = $scope.first_name;
       MyInfoService.userInfo.last_name = $scope.last_name;
       MyInfoService.userInfo.email = $scope.email;
+      MyInfoService.userInfo.phone = $scope.phone;
       MyInfoService.userInfo.menu_item_name = $scope.menu_item_name;
       MyInfoService.menu_item = response.data;
       MyInfoService.menu_item.image = ApiPath + "/images/" + $scope.menu_item_name + ".json"
